@@ -6,7 +6,7 @@ import './index.css'
 
 const GameRulesView = () => (
   <PopUp
-    model
+    modal
     trigger={<Button type="button">Rules</Button>}
     position="top right"
   >

@@ -9,22 +9,26 @@ const ChooseItem = props => {
     clickOnChoice(item)
   }
 
-  const getButtonId = () => {
-    let buttonId
-    if (id === 'ROCK') {
-      buttonId = 'rockButton'
-    } else if (id === 'SCISSORS') {
-      buttonId = 'scissorsButton'
-    } else {
-      buttonId = 'PAPER'
-    }
-    return buttonId
-  }
+  //   const getButtonId = () => {
+  //     let buttonId
+  //     if (id === 'ROCK') {
+  //       buttonId = 'rockButton'
+  //     } else if (id === 'SCISSORS') {
+  //       buttonId = 'scissorsButton'
+  //     } else {
+  //       buttonId = 'PAPER'
+  //     }
+  //     return buttonId
+  //   }
 
   return (
     <ListItem>
-      <button data-testid={getButtonId()} type="button">
-        <Image src={imageUrl} alt={id} onClick={onClickChoice} />
+      <button
+        data-testid={`${id.toLowerCase()}Button`}
+        type="button"
+        onClick={onClickChoice}
+      >
+        <Image src={imageUrl} alt={id} />
       </button>
     </ListItem>
   )

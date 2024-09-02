@@ -7,7 +7,7 @@ export const AppBg = styled.div`
   margin: 0px;
 `
 
-export const Para = styled.div`
+export const Para = styled.p`
   font-size: x-large;
   color: #ffffff;
   font-weight: 700;
@@ -54,7 +54,7 @@ export const ScoreText = styled.p`
   padding: 0px;
   margin: 0px;
 `
-export const Score = styled.h1`
+export const Score = styled.p`
   color: #223a5f;
   padding: 0px;
   margin: 0px;
@@ -103,6 +103,12 @@ export const Image = styled.img`
   padding: 0px;
 `
 export const Heading2 = styled.h1`
+  color: #ffffff;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+`
+export const Para2 = styled.p`
   color: #ffffff;
   text-align: center;
   margin: 0px;
